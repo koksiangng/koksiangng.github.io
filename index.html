@@ -3,13 +3,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script> </script>
+    <script type="text/javascript" src="script.js"> </script>
 </head>
 
 <body id="body">
+    <div class="mainpage" id="mainpageid">
     <!--SIDEBAR-->
-    <aside class="sidebar">
-        Sidebar
+    <aside id="sidebarid" class="sidebar">
+        <div id="sidebarbuttons">
+            <div>
+                One thing
+            </div>
+            <div>
+                Two things
+            </div>
+        </div>
     </aside>
     <!--HEADER-->
     <header class="header">
@@ -18,8 +26,13 @@
     <!--NAVIGATION-->
     <nav class="navigationbar">
         Navigation
+        <button class="openbtn" onclick="togglesidebar()">
+            CLICK!
+        </button>
     </nav>
+
     <div class="line"></div>
+    
     <!--CONTENT-->
     <main>
         <div class="content">
@@ -31,6 +44,7 @@
     <footer class="footer">
         Footer
     </footer>
+    </div>
 
 </body>
 
