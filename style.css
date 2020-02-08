@@ -22,6 +22,14 @@
     transition: 0.5s;
 }
 
+/* Temporary diabled [Nav bar] */
+#navopenbtn{
+    background: transparent;
+    border: none !important;
+    font-size: 0; /* Makes button not clickable */
+
+}
+
 .sidebar{
     background-color: #000000;
 
@@ -47,11 +55,15 @@
     background-color: #f2f2f2;
 
     width: 100%;
+    /* Planned height for "real site"
     height: 25vh;
+    */
+    height: 10vh;
 }
 
 .navigationbar{
-
+    
+    font-size: 0; /* Removed from the site temporarily. */
 }
 
 .content{
