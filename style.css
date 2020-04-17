@@ -14,58 +14,44 @@
 /* Body page */
 #body{
     margin: 0;
-    padding-left: 1%;
-    padding-right: 1%;
 }
 
-.mainpage{
-    transition: 0.5s;
+.navbartop{
+    overflow: hidden;
+    background-color: #333; /* Testing colors */
+    position: fixed; /* Sets navbar fixed on position */
+    top: 0; /* Positions navbar at top of the page */
+    width: 100%;
 }
 
-/* Temporary diabled [Nav bar] */
-#navopenbtn{
-    background: transparent;
-    border: none !important;
-    font-size: 0; /* Makes button not clickable */
-
-}
-
-.sidebar{
-    background-color: #000000;
-
-    width: 0;
-    height: 100vh;
-
-    left: 0;
-    
-    z-index: 1; /* Layer */
-    position: fixed; /* Stay on left */
-    transition: 0.5s;
-    
-}
-
-.sidebarbuttons{
+.navbartop a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 14px; /*top_bottom, left_right*/
     text-decoration: none;
-    font-size: 2em;
-    color: #FEFDFD;
+}
 
+/* Change background on mouse-over */
+.navbartop a:hover {
+    background: #ddd;
+    color: black;
 }
 
 .header{
     background-color: #f2f2f2;
 
+    background-image: url("test.jpg");
+    background-repeat: no-repeat; /* Repeats picture */
+    background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
+    background-position: center;
+    background-size: cover;
+
     width: 100%;
-    /* Planned height for "real site"
-    height: 25vh;
-    */
-    height: 10vh;
+    margin-top: 50px; /* Add a top margin to avoid content overlay */
+    height: 100vh;
 }
-
-.navigationbar{
-    
-    font-size: 0; /* Removed from the site temporarily. */
-}
-
 .content{
 
 }
@@ -80,7 +66,7 @@
     padding-top: 0.2%;
     padding-bottom: 0.2%;
 
-    background-color: #cec8c8;
+    background-color: black;
 
     width: 100%;
     height: 0.5vh;
