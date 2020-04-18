@@ -3,7 +3,6 @@
     TODO on website:
         Make beautiful
         Hyperlink to relevant social media
-        Sidebar for easier navigation
         Provide more details
 -->
 <html>
@@ -13,10 +12,10 @@
     <script type="text/javascript" src="script.js"> </script>
 </head>
 
-<body id="body">
+<body id="bodycontainer">
     
     <!--HEADER-->
-    <header class="header">
+    <header class="headercontainer">
 
         <!--NAVIGATION-->
         <div class="navbartop">
@@ -34,13 +33,19 @@
     <div class="line"></div>
     
     <!--CONTENT-->
-    <main>
-        Hi! Welcome to my site. Currently still working on it, thus "Work in progress". Might be prettier soon :)
-        </br> <!--Might need to change br for responsive design-->
-        Purely built in HTML, CSS and JS, this is to improve my skills in those areas. Want to know more about my projects? Check them out below!
-        <!--Flesh out later. Directly under "line"-->
+    <main class="maincontainer">
+        <!--LEFT PROFILE-->
+        <div class="contentdiv" id="profile">
+            <div id="profilepic">
         
-        <div class="content">
+            </div>
+            Hi! Welcome to my site. Currently still working on it, thus "Work in progress". Might be prettier soon :)
+            </br> <!--Might need to change br for responsive design-->
+            Purely built in HTML, CSS and JS, this is to improve my skills in those areas. Want to know more about my projects? Check them out below!
+            <!--Flesh out later. Directly under "line"-->
+        </div>
+        
+        <div class= "contentdiv" id="proficiency">
             I am known as Sigge, currently a KTH student. I like to develop things. I have currently few projects ongoing [Last updated: 2020 February]:
             <ul>
                 <li>This website [HTML, CSS, JS]</li>

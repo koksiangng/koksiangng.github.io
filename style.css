@@ -15,7 +15,7 @@
 }
 
 /* Body page */
-#body{
+#bodycontainer{
     margin: 0;
 }
 
@@ -25,6 +25,7 @@
     position: fixed; /* Sets navbar fixed on position */
     top: 0; /* Positions navbar at top of the page */
     width: 100%;
+    z-index: 9999;
 }
 
 /* Elements in the navbar */
@@ -35,7 +36,6 @@
     text-align: center;
     padding: 16px 14px; /*top_bottom, left_right*/
     text-decoration: none;
-
 }
 
 /* Change background on mouse-over */
@@ -44,7 +44,7 @@
     color: black;
 }
 
-.header{
+.headercontainer{
     position: relative;
 
     background-image: url("background.jpg");
@@ -84,7 +84,31 @@
     opacity: 0.7;
 }
 
-.content{
+.maincontainer{
+    height: 80vh;
+
+    background-color: var(--background-color);
+    color: var(--background-text-color);
+}
+
+.contentdiv{
+    width: 33vw;
+
+    float: left;
+}
+
+#profile{
+    
+}
+
+#profilepic div{
+    height: 20vw;
+    width: 20vw;
+    background-color: #aaa;
+    border-radius: 50%;
+}
+
+#proficiency{
 
 }
 
@@ -95,11 +119,11 @@
 /*Line seperator*/
 
 .line{
-    padding-top: 0.2%;
-    padding-bottom: 0.2%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
 
     background-color: black;
 
     width: 100%;
-    height: 0.5vh;
+    height: 0.2vh;
 }
