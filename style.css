@@ -92,24 +92,39 @@
 }
 
 .contentdiv{
+    
+    margin: 0 auto;
     width: 33vw;
 
     float: left;
 }
 
 #profile{
-    
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
-#profilepic div{
-    height: 20vw;
-    width: 20vw;
+#picturebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#profilepic{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    height: 10vw;
+    width: 10vw;
+
     background-color: #aaa;
     border-radius: 50%;
 }
 
 #proficiency{
-
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
 }
 
 .footer{
@@ -118,10 +133,7 @@
 
 /*Line seperator*/
 
-.line{
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
-
+.hline{
     background-color: black;
 
     width: 100%;
