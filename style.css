@@ -2,13 +2,16 @@
 *{
     font-family: Cambria;
 
-    -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
        -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+
+    --background-color: #333; /* Testing colors */
+    --background-text-color: #f2f2f2 /* Textcolor */
 }
 
 /* Body page */
@@ -18,19 +21,21 @@
 
 .navbartop{
     overflow: hidden;
-    background-color: #333; /* Testing colors */
+    background-color: var(--background-color);
     position: fixed; /* Sets navbar fixed on position */
     top: 0; /* Positions navbar at top of the page */
     width: 100%;
 }
 
+/* Elements in the navbar */
 .navbartop a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: var(--background-text-color);
     text-align: center;
     padding: 16px 14px; /*top_bottom, left_right*/
     text-decoration: none;
+
 }
 
 /* Change background on mouse-over */
@@ -40,9 +45,9 @@
 }
 
 .header{
-    background-color: #f2f2f2;
+    position: relative;
 
-    background-image: url("test.jpg");
+    background-image: url("background.jpg");
     background-repeat: no-repeat; /* Repeats picture */
     background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
     background-position: center;
@@ -52,6 +57,33 @@
     margin-top: 50px; /* Add a top margin to avoid content overlay */
     height: 100vh;
 }
+
+#introname{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.3em;
+    opacity: 0.9;
+
+    width: 20vw;
+    height: 10vh;
+
+    background-color: var(--background-color);
+    color: var(--background-text-color);
+
+    /* Text placement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4em;
+}
+
+#introname:hover{
+    opacity: 0.7;
+}
+
 .content{
 
 }
