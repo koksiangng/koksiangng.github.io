@@ -26,6 +26,7 @@
     top: 0; /* Positions navbar at top of the page */
     width: 100%;
     z-index: 9999;
+    box-shadow: 0.1em 0.1em 0.1em white;
 }
 
 /* Elements in the navbar */
@@ -84,71 +85,73 @@
     opacity: 0.7;
 }
 
+/* ############################################################################### */
+
 .maincontainer{
+    
     height: 80vh;
+
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
 
     background-color: var(--background-color);
     color: var(--background-text-color);
 
 }
 
-.contentdiv{
-    
-    margin: 0 auto;
-    width: 33vw;
+.contentcover{
+    margin-top: 5vh;
 
+    width: 5vw;
+    height: 60vh;
+    float: left;
+
+}
+
+.contentdiv{
+    margin-top: 5vh;
+
+    width: 30vw;
+    height: 60vh;
     float: left;
 }
 
-#profile{
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-
-#profile a{
+#contentmiddle a{
     color: var(--background-text-color);
     text-decoration: none;
 }
 
-#profile a:hover{
+#contentmiddle a:hover{
     text-decoration: underline;
 }
 
 #picturebox{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
+    height: 100%;
+    width: 100%;
 
-#profilepic{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    background-color: #c0c0c0;
+    color: black;
 
-    height: 15vw;
-    width: 15vw;
-
-    background-color: #aaa;
-    border-radius: 50%;
-
-    /* Text placement */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contentmiddle{
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-}
-
-#proficiency{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
     margin-left: 5vw;
 }
 
+.contentright{
+    margin-left: 5vw;
+
+    text-align: left;
+}
+
+
 .transition{
-    
+    height: 20vh;
+    opacity: 0;
 }
 
 .footer{
