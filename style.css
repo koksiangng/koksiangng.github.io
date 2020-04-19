@@ -57,6 +57,7 @@
     width: 100%;
     margin-top: 50px; /* Add a top margin to avoid content overlay */
     height: 100vh;
+
 }
 
 #introname{
@@ -89,7 +90,7 @@
 
 .maincontainer{
     
-    height: 80vh;
+    height: 70vh;
 
     text-align: center;
     margin: 0 auto;
@@ -97,7 +98,6 @@
 
     background-color: var(--background-color);
     color: var(--background-text-color);
-
 }
 
 .contentcover{
@@ -117,15 +117,6 @@
     float: left;
 }
 
-#contentmiddle a{
-    color: var(--background-text-color);
-    text-decoration: none;
-}
-
-#contentmiddle a:hover{
-    text-decoration: underline;
-}
-
 #picturebox{
     height: 100%;
     width: 100%;
@@ -140,18 +131,43 @@
 
 .contentmiddle{
     margin-left: 5vw;
+    text-align: left;
+}
+
+.contentmiddle a{
+    color: var(--background-text-color);
+    text-decoration: none;
+}
+
+.contentmiddle a:hover{
+    text-decoration: underline;
 }
 
 .contentright{
     margin-left: 5vw;
-
     text-align: left;
 }
 
-
+/* ##################################################################### */
 .transition{
-    height: 20vh;
-    opacity: 0;
+    height: 30vh;
+    opacity: 1;
+
+    background-image: url("transition2.jpg");
+    background-repeat: no-repeat; /* Repeats picture */
+    background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
+    background-position: center;
+    background-size: cover;
+}
+
+.portfoliomain{
+    height: 100vh;
+
+    background-color: var(--background-color);
+}
+
+.portfoliotitle{
+    
 }
 
 .footer{
@@ -164,5 +180,5 @@
     background-color: black;
 
     width: 100%;
-    height: 0.2vh;
+    height: 0.1vh;
 }
