@@ -66,7 +66,7 @@
     border-radius: 0.3em;
     opacity: 0.9;
 
-    width: 20vw;
+    width: 15vw;
     height: 10vh;
 
     background-color: var(--background-color);
@@ -77,7 +77,7 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 4em;
+    font-size: 2vw;
 }
 
 #introname:hover{
@@ -89,6 +89,7 @@
 
     background-color: var(--background-color);
     color: var(--background-text-color);
+
 }
 
 .contentdiv{
@@ -104,6 +105,15 @@
     margin-right: 5vw;
 }
 
+#profile a{
+    color: var(--background-text-color);
+    text-decoration: none;
+}
+
+#profile a:hover{
+    text-decoration: underline;
+}
+
 #picturebox{
     display: flex;
     align-items: center;
@@ -114,17 +124,31 @@
     margin-top: 5vh;
     margin-bottom: 5vh;
 
-    height: 10vw;
-    width: 10vw;
+    height: 15vw;
+    width: 15vw;
 
     background-color: #aaa;
     border-radius: 50%;
+
+    /* Text placement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentmiddle{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
 }
 
 #proficiency{
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-left: 5vw;
+}
+
+.transition{
+    
 }
 
 .footer{
