@@ -10,8 +10,8 @@
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 
-    --background-color: #333; /* Testing colors */
-    --background-text-color: #f2f2f2; /* Textcolor */
+    --background-color: #383838; /* Testing colors */
+    --background-text-color: #f1f1f1; /* Textcolor */
 
     scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@
     top: 0; /* Positions navbar at top of the page */
     width: 100%;
     z-index: 9999;
-    box-shadow: 0.1em 0.1em 0.1em white;
+    box-shadow: 0.1em 0.1em grey;
 }
 
 /* Elements in the navbar */
@@ -43,8 +43,8 @@
 
 /* Change background on mouse-over */
 .navbartop a:hover {
-    background: #ddd;
-    color: black;
+    background: var(--background-text-color);
+    color: var(--background-color);
 }
 
 .headercontainer{
@@ -201,11 +201,30 @@
     border: hidden;
 }
 
+
+/*#############################################*/
+
+.transition2{
+    height: 30vh;
+    width: 100%;
+
+    background-image: url("autumnstockphoto.jpg");
+    background-repeat: no-repeat; /* Repeats picture */
+    background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 .footer{
+    /*
     height: 10vh;
     width: 100%;
 
-    background-color: rgb(148, 7, 35);
+    background-color: rgb(148, 7, 35);*/
 }
 
 /*Line seperator*/
