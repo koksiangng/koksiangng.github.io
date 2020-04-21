@@ -11,7 +11,9 @@
                                   supported by Chrome and Opera */
 
     --background-color: #333; /* Testing colors */
-    --background-text-color: #f2f2f2 /* Textcolor */
+    --background-text-color: #f2f2f2; /* Textcolor */
+
+    scroll-behavior: smooth;
 }
 
 /* Body page */
@@ -90,7 +92,7 @@
 
 .maincontainer{
     
-    height: 70vh;
+    height: 60vh;
 
     text-align: center;
     margin: 0 auto;
@@ -100,26 +102,30 @@
     color: var(--background-text-color);
 }
 
+/* Black boxes on the sides */
 .contentcover{
     margin-top: 5vh;
 
     width: 5vw;
-    height: 60vh;
+    height: 100%;
     float: left;
-
 }
 
+/* Contains the content */
 .contentdiv{
     margin-top: 5vh;
 
     width: 30vw;
-    height: 60vh;
+    height: 90%;
     float: left;
+
 }
 
 #picturebox{
-    height: 100%;
-    width: 100%;
+    margin: auto;
+
+    height: 70%;
+    width: 70%;
 
     background-color: #c0c0c0;
     color: black;
@@ -127,6 +133,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 
 .contentmiddle{
@@ -151,9 +159,9 @@
 /* ##################################################################### */
 .transition{
     height: 30vh;
-    opacity: 1;
+    width: 100%;
 
-    background-image: url("transition2.jpg");
+    background-image: url("transition.jpg");
     background-repeat: no-repeat; /* Repeats picture */
     background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
     background-position: center;
@@ -162,16 +170,42 @@
 
 .portfoliomain{
     height: 100vh;
+    
+    text-align: center;
 
     background-color: var(--background-color);
 }
 
 .portfoliotitle{
-    
+    padding-top: 5vh;
+
+    width: 100%;
+    text-align: center;
+
+    background-color: var(--background-color);
+    color: var(--background-text-color);
+}
+
+.portfolioitem{
+    display: inline-block;
+    width: 20vw;
+    height: 40vh;
+
+    background-color: var(--background-color);
+    color: var(--background-text-color);
+
+    border-radius: 0.1em;
+    border-style: solid;
+    border-color: white;
+
+    border: hidden;
 }
 
 .footer{
+    height: 10vh;
+    width: 100%;
 
+    background-color: rgb(148, 7, 35);
 }
 
 /*Line seperator*/
