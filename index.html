@@ -12,30 +12,31 @@
 </head>
 
 <!--BODY-->
-<body id="bodycontainer">
+<body>
     
-    <!--HEADER-->
-    <header class="headercontainer">
-
-        <!--NAVIGATION-->
-        <div class="navbartop">
-            <a href="#About">About me</a>
-            <a href="#Projects">My projects</a>
-            <a href="mailto:ksng@kth.se">Contact me</a>
-        </div>
+    <!--NAVIGATION-->
+    <div class="navbartop">
+        <div class="button" onclick="sliderHome()">Home</div>
+        <div class="button" onclick="sliderAbout()">About me</div>
+        <div class="button" onclick="sliderPortfolio()">My projects</div>
+        <a href="mailto:ksng@kth.se">Contact me</a>
         
+    </div>
+
+    <!--HOME-->
+    <div id="homecontainer">
+
         <!--NAME ON THE HEADER-->
         <div id="introname">
             Kok Siang Ng
         </div>
 
-    </header>
+    </div>
 
     <div class="hline"></div>
     
     <!--CONTENT-->
-    <a id="About"></a>
-    <main class="maincontainer">
+    <div id="maincontainer">
         <div class="contentcover"></div>
 
         <!--LEFT PROFILE-->
@@ -87,24 +88,16 @@
             </div>
         </div>
 
-    </main>
-
-    <div class="hline"></div>
-    <div class="transition"></div>
+    </div>
 
     <!-- PROJECTS & PORTFOLIO! -->
-    <a id="Projects"></a>
-    <div class="portfoliomain">
-        <div class="portfoliotitle">
+    <div id="portfoliocontainer">
+        <div id="portfoliotitle">
             <h1>My projects</h1>
         </div>
         <div class="portfolioitem">
             Whoop! I have nothing to show for now!
         </div>
-    </div>
-
-    <div class="transition2">
-        Picture borrowed from: https://www.pexels.com/photo/nature-red-forest-leaves-33109/
     </div>
 
     <!--FOOTER-->
