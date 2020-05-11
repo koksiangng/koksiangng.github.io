@@ -12,99 +12,94 @@
 </head>
 
 <!--BODY-->
-<body id="bodycontainer">
+<body>
     
-    <!--HEADER-->
-    <header class="headercontainer">
-
-        <!--NAVIGATION-->
-        <div class="navbartop">
-            <a href="#About">About me</a>
-            <a href="#Projects">My projects</a>
-            <a href="mailto:ksng@kth.se">Contact me</a>
-        </div>
+    <!--NAVIGATION-->
+    <div class="navbartop">
+        <div class="button" onclick="sliderHome()">Home</div>
+        <div class="button" onclick="sliderAbout()">About me</div>
+        <div class="button" onclick="sliderPortfolio()">My projects</div>
+        <a href="mailto:ksng@kth.se">Contact me</a>
         
+    </div>
+
+    <!--HOME-->
+    <div id="homecontainer">
+
         <!--NAME ON THE HEADER-->
         <div id="introname">
             Kok Siang Ng
         </div>
 
-    </header>
+    </div>
 
     <div class="hline"></div>
     
     <!--CONTENT-->
-    <a id="About"></a>
-    <main class="maincontainer">
+    <div id="maincontainer">
         <div class="contentcover"></div>
 
-        <!--LEFT PROFILE-->
-        <div class="contentdiv">
-            <div id="picturebox">No picture yet!</div>
-        </div>
+        <div id="winterlayer">
 
-        <!--MIDDLE PROFILE-->
-        <div class="contentdiv">
-            <div class="contentmiddle">
-                <h1>About me</h1>
+            <!--LEFT PROFILE-->
+            <div class="contentdiv">
+                <div id="picturebox">No picture yet!</div>
+            </div>
+
+            <!--MIDDLE PROFILE-->
+            <div class="contentdiv">
+                <div class="contentmiddle">
+                    <h1>About me</h1>
+                    
+                    Hi! I am currently a student at KTH. I like to develop things. I have currently few projects ongoing [Last updated: 2020 April]:
+                    <ul>
+                        <li>AI-Assistant [Python]</li>
+                        <li>Game development [Not decided yet]</li>
+                        <li>Some random game tools [A mix, currently only Java]</li>
+                        <li>Infoweb [Most likely PHP & SQL for database]</li>
+                    </ul>
                 
-                Hi! I am currently a student at KTH. I like to develop things. I have currently few projects ongoing [Last updated: 2020 April]:
-                <ul>
-                    <li>AI-Assistant [Python]</li>
-                    <li>Game development [Not decided yet]</li>
-                    <li>Some random game tools [A mix, currently only Java]</li>
-                    <li>Infoweb [Most likely PHP & SQL for database]</li>
-                </ul>
-            
-                <a href="https://github.com/koksiangng/Programming-Challenges">Sometimes I do programming challenges!</a>
+                    <a href="https://github.com/koksiangng/Programming-Challenges">Sometimes I do programming challenges!</a>
+                </div>
+
             </div>
 
-        </div>
+            <!--RIGHT PROFILE-->
+            <div class="contentdiv">
+                <div class="contentright">
+                    <h1>Education</h1>
+                    <h3>2017 - 2022 (expected)</h3>
+                    Royal Institute of Technology, Stockholm
+                    <br>
+                    Bachelor's Program in Information and Communication Technology (180 HP)
+                </div>
 
-        <!--RIGHT PROFILE-->
-        <div class="contentdiv">
-            <div class="contentright">
-                <h1>Education</h1>
-                <h3>2017 - 2022 (expected)</h3>
-                Royal Institute of Technology, Stockholm
-                <br>
-                Bachelor's Program in Information and Communication Technology (180 HP)
-            </div>
+                <div class="contentright">
+                    <h1>Languages</h1>
+                    <ul>
+                        <li>English</li>
+                        <li>Swedish</li>
+                        <li>Chinese (basic)</li>
+                        <li>Spanish (basic)</li>
+                    </ul>
+                </div>
 
-            <div class="contentright">
-                <h1>Languages</h1>
-                <ul>
-                    <li>English</li>
-                    <li>Swedish</li>
-                    <li>Chinese (basic)</li>
-                    <li>Spanish (basic)</li>
-                </ul>
-            </div>
-
-            <div class="contentright">
-                <h1>Tech skills</h1>
-                Check out my projects below!
+                <div class="contentright">
+                    <h1>Tech skills</h1>
+                    Check out my projects!
+                </div>
             </div>
         </div>
-
-    </main>
-
-    <div class="hline"></div>
-    <div class="transition"></div>
+    </div>
 
     <!-- PROJECTS & PORTFOLIO! -->
-    <a id="Projects"></a>
-    <div class="portfoliomain">
-        <div class="portfoliotitle">
+    <div id="portfoliocontainer">
+        <div id="portfoliotitle">
             <h1>My projects</h1>
         </div>
         <div class="portfolioitem">
             Whoop! I have nothing to show for now!
         </div>
-    </div>
-
-    <div class="transition2">
-        Picture borrowed from: https://www.pexels.com/photo/nature-red-forest-leaves-33109/
     </div>
 
     <!--FOOTER-->

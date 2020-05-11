@@ -13,12 +13,18 @@
     --background-color: #383838; /* Testing colors */
     --background-text-color: #f1f1f1; /* Textcolor */
 
+    --status: 0;
+
     scroll-behavior: smooth;
 }
 
 /* Body page */
-#bodycontainer{
+html, body{
     margin: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow-y: hidden;
 }
 
 .navbartop{
@@ -47,10 +53,28 @@
     color: var(--background-color);
 }
 
-.headercontainer{
+/*TEST ########################################################*/
+.button{
+    float: left;
+    display: block;
+    color: var(--background-text-color);
+    text-align: center;
+    padding: 16px 14px; /*top_bottom, left_right*/
+    text-decoration: none;
+}
+
+.button:hover{
+    background: var(--background-text-color);
+    color: var(--background-color);
+}
+
+/*########################################################*/
+
+
+#homecontainer{
     position: relative;
 
-    background-image: url("background.jpg");
+    background-image: url("summer.jpg");
     background-repeat: no-repeat; /* Repeats picture */
     background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
     background-position: center;
@@ -58,7 +82,11 @@
 
     width: 100%;
     margin-top: 50px; /* Add a top margin to avoid content overlay */
-    height: 100vh;
+    height: 100%;
+
+    /* slider */
+    overflow-x: hidden;
+    transition: 0.5s;
 
 }
 
@@ -90,17 +118,42 @@
 
 /* ############################################################################### */
 
-.maincontainer{
+#maincontainer{
     
-    height: 60vh;
+    top: 50px;
+    height: 100%;
+    width: 100%;
 
     text-align: center;
     margin: 0 auto;
-    max-width: 100%;
 
-    background-color: var(--background-color);
+    background-image: url("winter.jpg");
+    background-repeat: no-repeat; /* Repeats picture */
+    background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
+    background-position: center;
+    background-size: cover;
+    /*background-color: var(--background-color);*/
     color: var(--background-text-color);
+
+    overflow-y: hidden;
+
+    /*slider*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    left: 100%;
+
+    /*disappear*/
+    position: fixed;
 }
+
+#winterlayer{
+    background-color: rgba(58, 90, 95, 0.781);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Black boxes on the sides */
 .contentcover{
@@ -156,7 +209,6 @@
     text-align: left;
 }
 
-/* ##################################################################### */
 .transition{
     height: 30vh;
     width: 100%;
@@ -168,22 +220,34 @@
     background-size: cover;
 }
 
-.portfoliomain{
-    height: 100vh;
-    
+/* ##################################################################### */
+
+#portfoliocontainer{
+    top: 50px;
+    height: 100%;
+    width: 100%;
+
     text-align: center;
 
+    
     background-color: var(--background-color);
+    color: var(--background-text-color);
+
+    /*slider*/
+    left: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    /*disappear*/
+    position: fixed;
 }
 
-.portfoliotitle{
+#portfoliotitle{
     padding-top: 5vh;
 
     width: 100%;
     text-align: center;
 
-    background-color: var(--background-color);
-    color: var(--background-text-color);
 }
 
 .portfolioitem{
@@ -191,8 +255,6 @@
     width: 20vw;
     height: 40vh;
 
-    background-color: var(--background-color);
-    color: var(--background-text-color);
 
     border-radius: 0.1em;
     border-style: solid;
@@ -227,8 +289,36 @@
     background-color: rgb(148, 7, 35);*/
 }
 
-/*Line seperator*/
+/*Sliding animation test */
+.slide-in{
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
 
+.slide-out{
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+/*Line seperator*/
 .hline{
     background-color: black;
 
