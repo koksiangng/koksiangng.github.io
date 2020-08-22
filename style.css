@@ -267,19 +267,22 @@ html, body{
 /*#############################################*/
 
 #contactmecontainer{
-    top: 50px;
+    top: 0px;
     height: 100%;
     width: 100%;
 
     text-align: center;
-
+    
+    
+    /* span can now align text to bottom left */
+    display: flex;
     
     background-image: url("photos/autumnstockphoto.jpg");
     background-repeat: no-repeat; /* Repeats picture */
     background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
     background-position: center;
     background-size: cover;
-    color: var(--background-text-color);
+    color: black;
 
     /*slider*/
     left: 200%;
@@ -288,6 +291,11 @@ html, body{
 
     /*disappear*/
     position: fixed;
+
+}
+
+#contactmecontainer span{
+    align-self: flex-end;
 }
 
 #contactbox{
