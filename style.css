@@ -74,7 +74,7 @@ html, body{
 #homecontainer{
     position: relative;
 
-    background-image: url("summer.jpg");
+    background-image: url("photos/summer.jpg");
     background-repeat: no-repeat; /* Repeats picture */
     background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
     background-position: center;
@@ -118,7 +118,7 @@ html, body{
 
 /* ############################################################################### */
 
-#maincontainer{
+#aboutmecontainer{
     
     top: 50px;
     height: 100%;
@@ -127,7 +127,7 @@ html, body{
     text-align: center;
     margin: 0 auto;
 
-    background-image: url("winter.jpg");
+    background-image: url("photos/winter.jpg");
     background-repeat: no-repeat; /* Repeats picture */
     background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
     background-position: center;
@@ -222,7 +222,7 @@ html, body{
 
 /* ##################################################################### */
 
-#portfoliocontainer{
+#projectscontainer{
     top: 50px;
     height: 100%;
     width: 100%;
@@ -266,6 +266,70 @@ html, body{
 
 /*#############################################*/
 
+#contactmecontainer{
+    top: 50px;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+
+    
+    background-image: url("photos/autumnstockphoto.jpg");
+    background-repeat: no-repeat; /* Repeats picture */
+    background-attachment: fixed; /* Stays in one place (Doesn't follow scroll) */
+    background-position: center;
+    background-size: cover;
+    color: var(--background-text-color);
+
+    /*slider*/
+    left: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    /*disappear*/
+    position: fixed;
+}
+
+#contactbox{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.3em;
+    opacity: 0.9;
+
+    width: 20vw;
+    height: 15vh;
+
+    background-color: var(--background-color);
+    color: var(--background-text-color);
+
+    /* Text placement */
+
+    vertical-align: baseline;
+    
+    font-size: 1em;
+}
+
+.contactitem{
+    top: 3%;
+    text-align: left;
+
+    background-color: var(--background-color);
+    color: var(--background-text-color);
+}
+
+.contactitem a{
+    color: var(--background-text-color);
+    text-decoration: none;
+}
+
+.contactitem a:hover{
+    text-decoration: underline;
+}
+
+
+/*#############################################*/
 .transition2{
     height: 30vh;
     width: 100%;
