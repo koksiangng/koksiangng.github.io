@@ -248,6 +248,7 @@ html, body{
     width: 100%;
     text-align: center;
 
+    text-decoration: none;
 }
 
 .portfolioitem{
@@ -255,12 +256,23 @@ html, body{
     width: 20vw;
     height: 40vh;
 
-
     border-radius: 0.1em;
     border-style: solid;
     border-color: white;
 
+    /* Change here when displaying item! */
     border: hidden;
+
+    text-align: left;
+}
+
+.portfolioitem a{
+    color: var(--background-text-color);
+    text-decoration: none;
+}
+
+.portfolioitem a:hover{
+    text-decoration: underline;
 }
 
 
